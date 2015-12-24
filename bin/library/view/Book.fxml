@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.BookController">
+   <children>
+      <AnchorPane layoutY="-39.0" prefHeight="700.0" prefWidth="600.0">
+         <children>
+            <ButtonBar layoutX="155.0" layoutY="225.0" prefHeight="40.0" prefWidth="82.0" />
+            <ButtonBar layoutX="456.0" layoutY="225.0" prefHeight="40.0" prefWidth="85.0" />
+            <ButtonBar layoutX="162.0" layoutY="306.0" prefHeight="40.0" prefWidth="85.0">
+               <buttons>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                     <buttons>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+                     </buttons>
+                  </ButtonBar>
+               </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="367.0" layoutY="326.0" prefHeight="40.0" prefWidth="109.0" />
+          <Button layoutX="47.0" layoutY="306.0" mnemonicParsing="false" onAction="#save" prefHeight="40.0" prefWidth="119.0" text="Add Book" />
+            <TextField fx:id="txtBookID" layoutX="209.0" layoutY="159.0" />
+            <TextField fx:id="txtBookName" layoutX="209.0" layoutY="206.0" />
+            <Button layoutX="52.0" layoutY="424.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="109.0" text="Delete Book" />
+            <Label layoutX="62.0" layoutY="161.0" prefHeight="21.0" prefWidth="75.0" text="Book ID :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="59.0" layoutY="208.0" prefHeight="21.0" prefWidth="94.0" text="Book Name :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="63.0" layoutY="372.0" text="Book ID : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="182.0" layoutY="366.0" />
+            <Label layoutX="322.0" layoutY="98.0" text="BOOKS">
+               <font>
+                  <Font name="Algerian" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="256.0" text="Author :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBookAuthor" layoutX="210.0" layoutY="254.0" />
+            <ImageView fitHeight="350.0" fitWidth="300.0" layoutX="444.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+            <Image url="image/book.jpg" />
+            </image>
+            </ImageView>
+            <Button layoutX="231.0" layoutY="304.0" mnemonicParsing="false" onAction="#update" prefHeight="45.0" prefWidth="140.0" text="Update Book" />
+            <Hyperlink fx:id="btnLogin" layoutX="528.0" layoutY="87.0" onAction="#btnLogin" text="Logout" />
+            <Label fx:id="lblStatus" layoutX="106.0" layoutY="513.0" text="Label" />
+            <TextField fx:id="txtBookID1" layoutX="182.0" layoutY="378.0" prefHeight="30.0" prefWidth="149.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

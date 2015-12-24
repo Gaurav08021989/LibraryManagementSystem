@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.PenaltyController">
+   <children>
+      <Label layoutX="43.0" layoutY="108.0" prefHeight="21.0" prefWidth="91.0" text="Student ID:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="student_id" layoutX="164.0" layoutY="106.0" />
+      <DatePicker fx:id="issue_date" layoutX="163.0" layoutY="151.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="46.0" layoutY="155.0" prefHeight="21.0" prefWidth="84.0" text="Issue Date: ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <DatePicker fx:id="recd_date" layoutX="163.0" layoutY="197.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="46.0" layoutY="199.0" text="Receive Date :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="Fine" layoutX="54.0" layoutY="250.0" prefHeight="21.0" prefWidth="49.0" text="Fine :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="Add" layoutX="42.0" layoutY="295.0" mnemonicParsing="false" onAction="#AddFine" prefHeight="31.0" prefWidth="74.0" text="Add" />
+      <Label layoutX="46.0" layoutY="64.0" prefHeight="21.0" prefWidth="84.0" text="Penalty ID :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="penalty_id" layoutX="164.0" layoutY="62.0" />
+      <ChoiceBox fx:id="penalty_amount" layoutX="163.0" layoutY="248.0" prefWidth="150.0" />
+      <Label layoutX="342.0" layoutY="29.0" prefHeight="24.0" prefWidth="74.0" text="FINES">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="262.0" fitWidth="262.0" layoutX="455.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+      <Image url="image/fine.jpg" />
+      
+      </image>
+      </ImageView>
+      <Hyperlink layoutX="569.0" layoutY="30.0" text="Hyperlink" />
+      <Label fx:id="lblStatus" layoutX="102.0" layoutY="377.0" text="Label" />
+   </children>
+</AnchorPane>

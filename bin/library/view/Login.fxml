@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.LoginController">
+   <children>
+      <AnchorPane layoutX="-97.0" layoutY="-122.0" prefHeight="200.0" prefWidth="200.0" />
+      
+      
+      <Button fx:id="btnLogin" layoutX="46.0" layoutY="261.0" mnemonicParsing="false" onAction="#Login" prefHeight="43.0" prefWidth="98.0" text="Login" />
+      <TextField fx:id="txtUsername" layoutX="167.0" layoutY="124.0" prefHeight="36.0" prefWidth="140.0" />
+      <Button layoutX="167.0" layoutY="262.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="105.0" text="Cancel" />
+      <Label fx:id="lblStatus" layoutX="102.0" layoutY="416.0" text="Status" />
+      <Label contentDisplay="CENTER" layoutX="39.0" layoutY="132.0" prefHeight="20.0" prefWidth="91.0" text="UserName : -">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label contentDisplay="CENTER" layoutX="39.0" layoutY="189.0" prefHeight="20.0" prefWidth="105.0" text="Password : -">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="39.0" prefHeight="24.0" prefWidth="768.0" text="                                WELCOME TO IIT LIBRARY ">
+         <font>
+            <Font name="Algerian" size="27.0" />
+         </font>
+      </Label>
+  
+      <ImageView fitHeight="245.0" fitWidth="298.0" layoutX="369.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+      <Image url="image/library1.jpg" />
+      </image>
+      </ImageView>
+      <CheckBox layoutX="48.0" layoutY="335.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="140.0" text="Remember Me">
+         <font>
+            <Font name="Algerian" size="15.0" />
+         </font>
+      </CheckBox>
+      <PasswordField fx:id="txtPassword" layoutX="167.0" layoutY="187.0" prefHeight="25.0" prefWidth="140.0" />
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.AdminController">
+   <children>
+      <AnchorPane layoutX="-107.0" layoutY="-61.0" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="closeButton" layoutX="414.0" layoutY="151.0" mnemonicParsing="false" onAction="#btnstudent" prefHeight="36.0" prefWidth="117.0" text="Student" />
+            <Button fx:id="closeButton" layoutX="414.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnbook" prefHeight="36.0" prefWidth="117.0" text="Book" />
+            <Label fx:id="lblAdminUserName" layoutX="161.0" layoutY="96.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="lblAdminUserId" layoutX="160.0" layoutY="130.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Button fx:id="ViewBook" layoutX="414.0" layoutY="270.0" mnemonicParsing="false" onAction="#ViewBook" prefHeight="36.0" prefWidth="117.0" text="View Book" />
+            <Button fx:id="ViewStudent" layoutX="417.0" layoutY="327.0" mnemonicParsing="false" onAction="#ViewStudent" prefHeight="36.0" prefWidth="117.0" text="View Student" />
+            <Button layoutX="417.0" layoutY="384.0" mnemonicParsing="false" onAction="#bookview" prefHeight="36.0" prefWidth="117.0" text="View Report" />
+            <Button layoutX="417.0" layoutY="439.0" mnemonicParsing="false" onAction="#ViewFine" prefHeight="36.0" prefWidth="117.0" text="View Fine" />
+            <ImageView fitHeight="251.0" fitWidth="220.0" layoutX="137.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+            <Image url="image/admin.jpg" />
+            </image>
+            </ImageView>
+            <Button layoutX="417.0" layoutY="498.0" mnemonicParsing="false" onAction="#CreateStudent" prefHeight="36.0" prefWidth="117.0" text="Create Student" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

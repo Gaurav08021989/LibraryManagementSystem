@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.controller.StudentController">
+   <children>
+      <AnchorPane layoutX="-78.0" layoutY="-115.0" prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="140.0" layoutY="206.0" prefHeight="21.0" prefWidth="86.0" text="Student ID :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <TextField fx:id="txtStudentID" layoutX="276.0" layoutY="202.0" />
+            <Label layoutX="139.0" layoutY="249.0" prefHeight="21.0" prefWidth="112.0" text="Student Name :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <TextField fx:id="txtStudentName" layoutX="276.0" layoutY="247.0" />
+            <Button layoutX="141.0" layoutY="342.0" mnemonicParsing="false" onAction="#studentsave" prefHeight="38.0" prefWidth="77.0" text="Add" />
+            <Label layoutX="145.0" layoutY="399.0" prefHeight="21.0" prefWidth="94.0" text="Student ID :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Button layoutX="148.0" layoutY="431.0" mnemonicParsing="false" onAction="#studentdelete" prefHeight="38.0" prefWidth="94.0" text="Delete" />
+            <TextField fx:id="userid1" layoutX="276.0" layoutY="397.0" />
+            <Button layoutX="229.0" layoutY="342.0" mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="94.0" text="Update" />
+            <Label layoutX="139.0" layoutY="292.0" text="User ID :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <TextField fx:id="userid" layoutX="276.0" layoutY="290.0" />
+            <Label layoutX="393.0" layoutY="145.0" prefHeight="38.0" prefWidth="149.0" text="STUDENTS">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="350.0" fitWidth="290.0" layoutX="499.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+            <Image url="image/stud.jpg" />
+            </image>
+            </ImageView>
+            <Label fx:id="lblStatus" layoutX="204.0" layoutY="518.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
